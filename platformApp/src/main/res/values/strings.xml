@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PlatformApp</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="login">登录</string>
+    <string name="save">保存</string>
+</resources>

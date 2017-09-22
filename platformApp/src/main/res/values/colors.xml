@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099F8</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0099F8</color>
+    <color name="color_primary_hint">#8bcef7</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_transparency_20">#33000000</color>
+
+    <color name="login_bt_click">#FF1E8F72</color>
+    <color name="app_main">#19c296</color>
+    <color name="backgroundColor">#F9F9F9</color>
+    <!--分割线颜色-->
+    <color name="colorLineColor">#DCDCDC</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text_hint">#999999</color>
+    <color name="settingSpliteLine">#dcdcdc</color>
+
+    <color name="actionsheet_blue">#0099f8</color>
+
+    <color name="notice_text_color">#FFC8C8C8</color>
+
+    <color name="titlebackgroundColor">#FAFAFA</color>
+    <color name="textcolor">#333333</color>
+    <color name="bottom_dialog_certain">#428AEB</color>
+    <color name="textcolorhint">#999999</color>
+    <color name="title_background">#FAFAFA</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_yellow">#F9FD06</color>
+    <color name="backgroud_grey">#F3F3F3</color>
+
+    <color name="backgroud_red">#fd6464</color>
+    <color name="switch_border_color">#FFFFFF</color>
+    <color name="switch_border_backgroud">#FFFFFF</color>
+
+
+    <drawable name="selected">#80FFFFFF</drawable>
+    <drawable name="unselected">#FFFFFF</drawable>
+
+
+    <color name="red_transparent">#50F76260</color>
+
+
+
+
+
+</resources>
+

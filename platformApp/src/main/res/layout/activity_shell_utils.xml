@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/b_shell_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="checkRootPermission"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(String_command,boolean_isRoot)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(ListString_commands,boolean_isRoot)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(String[] commands, boolean isRoot)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(String command, boolean isRoot, boolean isNeedResultMsg)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(ListString commands, boolean isRoot, boolean isNeedResultMsg) "
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/b_shell_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="execCommand(String[] commands, boolean isRoot, boolean isNeedResultMsg)"
+        android:textAllCaps="false" />
+
+</LinearLayout>

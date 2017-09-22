@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/balance_bg"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/goods_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/goods_desc"
+            android:text="大红枣"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/goods_sell"
+            android:text="售价：￥"
+            android:layout_below="@id/goods_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:text="100"
+            android:layout_below="@id/goods_desc"
+            android:layout_toRightOf="@id/goods_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RadioButton
+        android:id="@+id/goods_radio_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/radio"
+        android:button="@null"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

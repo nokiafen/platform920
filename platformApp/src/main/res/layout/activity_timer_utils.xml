@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/b_timer_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_TimerSchedule(TimerTask task, long delay, long period)"/>
+
+    <Button
+        android:id="@+id/b_timer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_TimerSchedule(TimerTask task, Date firstTime, long period)"/>
+    <Button
+        android:id="@+id/b_timer_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_TimerSchedule(TimerTask task, long delay)"/>
+    <Button
+        android:id="@+id/b_timer_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_TimerSchedule(TimerTask task, Date time)"/>
+    <Button
+        android:id="@+id/b_timer_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_CountDownTimer"/>
+    <Button
+        android:id="@+id/b_timer_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="m_HandlerPostDelayed"/>
+</LinearLayout>
