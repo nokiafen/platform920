@@ -27,6 +27,7 @@
         android:id="@+id/appbarlayout"
         style="@style/WrapContent.WidthMatchParent"
         android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="gone"
         >
 
         <android.support.v7.widget.Toolbar

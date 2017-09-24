@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 //apply plugin:  rootProject.ext.plugin.application
-apply plugin: 'com.getkeepsafe.dexcount'
+//apply plugin: 'com.getkeepsafe.dexcount'
 apply plugin: rootProject.ext.plugin.retrolambda
 apply plugin: rootProject.ext.plugin.butterknife
 apply plugin: rootProject.ext.plugin.butterknifeLib
@@ -25,11 +25,11 @@ uploadArchives {
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion '25.0.0'
     defaultConfig {
 //        applicationId "com.comba.android.combacommon"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -131,6 +131,6 @@ dependencies {
     compile 'com.orhanobut:dialogplus:1.11@aar'
     compile 'com.github.hss01248:DialogUtil:1.1.4'
     compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+//    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     testCompile 'junit:junit:4.12'
 }

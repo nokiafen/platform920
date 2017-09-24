@@ -43,8 +43,12 @@ public class ContactRecordListActivity extends BaseOkHttpActivity {
         public void onItemClick(View v, int position) {
             if (0 == position) {
            contacts= opUtil.getAllContacts();
-                android.widget.Toast.makeText(ContactRecordListActivity.this,contacts.size()+"", android.widget.Toast.LENGTH_SHORT).show();
+                android.widget.Toast.makeText(ContactRecordListActivity.this,"查询到"+contacts.size()+"条联系人", android.widget.Toast.LENGTH_SHORT).show();
             } else if(1==position){
+                if(contacts==null||contacts.size()==0){
+                    android.widget.Toast.makeText(ContactRecordListActivity.this,"请先查询", android.widget.Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 contacts.remove(contacts.get(0));
                 opUtil.deleteContacts(contacts);
             }else if(2==position){
@@ -58,12 +62,18 @@ public class ContactRecordListActivity extends BaseOkHttpActivity {
                 cat1.setPhoneNUm("45861234521");
                 contacts.add(cat1);
                 opUtil.insertContacts(contacts);
+                android.widget.Toast.makeText(ContactRecordListActivity.this,"已插入联系人cat1", android.widget.Toast.LENGTH_SHORT).show();
             }else if(3==position){
+                if(contacts==null||contacts.size()==0){
+                    android.widget.Toast.makeText(ContactRecordListActivity.this,"请先查询", android.widget.Toast.LENGTH_SHORT).show();
+                    return;
+                }
                Contact contact= contacts.get(0);
-                contact.setName("change0");
+                contact.setName("changen");
                 List<Contact> contacts=new ArrayList<>();
                 contacts.add(contact);
-                opUtil.updateContactsIps(contacts);
+             opUtil.updateContactsIps(contacts);
+                android.widget.Toast.makeText(ContactRecordListActivity.this,"已更新联系人"+contact.getName(), android.widget.Toast.LENGTH_SHORT).show();
             }
         }
     };

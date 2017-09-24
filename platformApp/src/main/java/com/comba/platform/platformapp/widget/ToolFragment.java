@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.comba.android.combacommon.contacts.ContactRecordListActivity;
+import com.comba.android.combacommon.dialog.DialogSampleActivity;
 import com.comba.platform.platformapp.R;
 import com.comba.platform.platformapp.tool.ContainerUtilActivity;
 import com.comba.platform.platformapp.tool.DateformatUtilActivity;
@@ -17,10 +19,12 @@ import com.comba.platform.platformapp.tool.HardwareUtilActivity;
 import com.comba.platform.platformapp.tool.LogUtilActivity;
 import com.comba.platform.platformapp.tool.RandomUtilActivity;
 import com.comba.platform.platformapp.tool.ResourceUtilsActivity;
+import com.comba.platform.platformapp.tool.ScreenutilActivity;
 import com.comba.platform.platformapp.tool.SensorUtilActivity;
 import com.comba.platform.platformapp.tool.ShellUtilsActivity;
 import com.comba.platform.platformapp.tool.SpUtilActivity;
 import com.comba.platform.platformapp.tool.StringUtilActivity;
+import com.comba.platform.platformapp.tool.SystemInfoUtilActivity;
 import com.comba.platform.platformapp.tool.TimerUtilsActivity;
 import com.comba.platform.platformapp.tool.ToastUtilActivity;
 import com.comba.platform.platformapp.tool.buglyCrashActivity;
@@ -104,7 +108,7 @@ public class ToolFragment extends Fragment {
 
     @OnClick({R.id.stringUtil, R.id.randomUtil, R.id.containerUtil, R.id.dateUtil, R.id.injectUtil,
             R.id.sensorUtil, R.id.hardwareUtil, R.id.logUtil, R.id.sharepreferenceUtil,R.id.ResourceUtils,R.id.ShellUtils,R.id.ToastUtil,R.id.buglyCrash,
-            R.id.TimerUtils,R.id.push})
+            R.id.TimerUtils,R.id.push,R.id.screenUtil,R.id.sytemInfo,R.id.contactInfo,R.id.dialogUtil})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.stringUtil:
@@ -163,6 +167,22 @@ public class ToolFragment extends Fragment {
                 break;
             case R.id.push:
 
+                break;
+            case R.id.screenUtil:
+                Intent intentScreen= new Intent(getActivity(), ScreenutilActivity.class);
+                startActivity(intentScreen);
+                break;
+            case R.id.sytemInfo:
+                Intent intentSystemInfo= new Intent(getActivity(), SystemInfoUtilActivity.class);
+                startActivity(intentSystemInfo);
+                break;
+            case R.id.contactInfo:
+                Intent intentContact= new Intent(getActivity(), ContactRecordListActivity.class);
+                startActivity(intentContact);
+                break;
+            case R.id.dialogUtil:
+                Intent intentDialog= new Intent(getActivity(), DialogSampleActivity.class);
+                startActivity(intentDialog);
                 break;
         }
     }

@@ -1,2 +1,2 @@
 
-include ':app', ':mytestapplication', ':platformApp', ':PushSDK'
+include ':app',  ':platformApp'

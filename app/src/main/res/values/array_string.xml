@@ -8,12 +8,20 @@
         <item>网络请求缓存策略</item>
     </string-array>
     <string-array name="activity_dialog_item">
-        <item>ssd</item>
-        <item>ssd</item>
-        <item>ssd</item>
-        <item>ssd</item>
-        <item>ssd</item>
-        <item>ios-alert</item>
+        <item>查询</item>
+        <item>删除</item>
+        <item>插入</item>
+        <item>修改</item>
+        <!--<item>ios-alert</item>-->
+    </string-array>
+    <string-array name="activity_dialog">
+        <item>简约</item>
+        <item>图片</item>
+        <item>加载</item>
+        <item>多列</item>
+        <item>Ios多行</item>
+        <item>Ios风格简约</item>
+        <!--<item>ios-alert</item>-->
     </string-array>
     <string-array name="activity_demo_item">
         <item>net</item>

@@ -109,6 +109,30 @@
                 android:layout_height="wrap_content"
                 android:text="push"
                 android:textAllCaps="false" />
+            <Button
+                android:id="@+id/screenUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="屏幕工具类"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/sytemInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="系统信息"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/contactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/dialogUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dialogUtil"
+                android:textAllCaps="false" />
         </LinearLayout>
 
     </ScrollView>

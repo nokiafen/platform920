@@ -2,6 +2,7 @@ package com.comba.android.combacommon.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.text.style.LineHeightSpan;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import java.lang.reflect.Field;
@@ -29,7 +30,7 @@ public class ScreenUtil {
     static {
         init(Cache.getContext());
     }
-	
+
 	public static int dip2px(float dipValue) {
 		return (int) (dipValue * density + 0.5f);
 	}
@@ -69,6 +70,19 @@ public class ScreenUtil {
 			GetInfo(Cache.getContext());
 		}
 		return screenHeight;
+	}
+	public static int getDisplayWith() {
+		if(screenWidth == 0){
+			GetInfo(Cache.getContext());
+		}
+		return screenWidth;
+	}
+
+	public static int getDisplaDpi(Context context) {
+		if(screenHeight == 0){
+			GetInfo(Cache.getContext());
+		}
+		return densityDpi;
 	}
 
 	public static void GetInfo(Context context) {

@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
+import android.util.Log;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -141,7 +142,8 @@ public class ContactsOperationUtil implements  IContactOperations<Contact> {
 
                     Uri uri = Uri.parse("content://com.android.contacts/data");//对data表的所有数据操作
                     ContentResolver resolver = cxt.getContentResolver();
-                    resolver.update(uri, values, "mimetype=? and raw_contact_id=?", new String[]{mimetype,contact.getRaw_id()});
+                int result=  resolver.update(uri, values, "mimetype=? and raw_contact_id=?", new String[]{mimetype,contact.getRaw_id()});
+                    Log.d("contact_update",+result+"");
                 }
     }
 

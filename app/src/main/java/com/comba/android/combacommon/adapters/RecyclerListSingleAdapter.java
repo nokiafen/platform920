@@ -18,6 +18,7 @@ package com.comba.android.combacommon.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.comba.android.combacommon.R;
@@ -59,13 +60,13 @@ public class RecyclerListSingleAdapter extends BaseAdapter<RecyclerListSingleAda
     public class TextViewHolder extends BaseAdapter.BaseViewHolder implements View.OnClickListener {
 
         @BindView(R2.id.item_list_title)
-        TextView mTextView;
+        Button mTextView;
 
         public TextViewHolder(View itemView) {
             super(itemView);
 
             ButterKnife.bind(this, itemView);
-            itemView.setOnClickListener(this);
+            mTextView.setOnClickListener(this);
         }
 
         @Override

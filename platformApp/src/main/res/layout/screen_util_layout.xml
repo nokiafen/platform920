@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/tv_descrip"
+    android:textSize="14sp"
+    />
+    <Button
+        android:id="@+id/bt_getwith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取设备屏宽" />
+
+    <Button
+        android:id="@+id/bt_getheight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取设备屏高" />
+
+    <Button
+        android:id="@+id/bt_statusheight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态栏高度" />
+
+    <Button
+        android:id="@+id/bt_navitationheight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NavigatonBar高度" />
+    <Button
+        android:id="@+id/bt_getdpi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取设备像素密度" />
+</LinearLayout>

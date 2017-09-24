@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.comba.platform.platformapp.widget.OthersFragment;
 import com.comba.platform.platformapp.widget.PayFragment;
 import com.comba.platform.platformapp.widget.ToolFragment;
-import com.umeng.message.PushAgent;
+//import com.umeng.message.PushAgent;
 
 import java.util.ArrayList;
 import java.util.List;

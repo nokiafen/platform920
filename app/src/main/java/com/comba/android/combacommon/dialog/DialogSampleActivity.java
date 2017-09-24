@@ -35,7 +35,7 @@ public class DialogSampleActivity extends BaseOkHttpActivity {
     @Override
     protected void onActivityCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_https);
-         imageItems = Arrays.asList(getResources().getStringArray(R.array.activity_dialog_item));
+         imageItems = Arrays.asList(getResources().getStringArray(R.array.activity_dialog));
         RecyclerListSingleAdapter listAdapter = new RecyclerListSingleAdapter(imageItems, mItemClickListener);
         RecyclerView recyclerView = ButterKnife.findById(this, R.id.rv_https_activity);
         recyclerView.setAdapter(listAdapter);
